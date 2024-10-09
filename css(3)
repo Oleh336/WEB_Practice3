@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header, main, footer {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 10px;
+    text-align: center; /* Центруємо текст у header і footer */
+}
+
+h2 {
+    color: #333333;
+}
+
+footer ul {
+    list-style-type: none; /* Без маркерів */
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
+}
+/* Загальний стиль для всього документа */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d9d9d9; /* Світло-сірий фон */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль для header */
+header {
+    background-color: #003366; /* Темно-синій */
+    padding: 20px;
+    border: 2px solid #808080; /* Сіре обрамлення */
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стиль для main */
+main {
+    background-color: #ffffff; /* Білий фон */
+    border: 1px solid #808080; /* Сіре обрамлення */
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Стиль для заголовка в section */
+section h2 {
+    color: #333; /* Темний текст */
+}
+
+/* Стиль для article */
+article {
+    margin-top: 20px;
+}
+
+article p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Стиль для footer */
+footer {
+    background-color: #003366; /* Темно-синій */
+    padding: 10px;
+    border: 2px solid #808080; /* Сіре обрамлення */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 5px 0;
+    text-align: center;
+    color: #ffffff; /* Білий текст */
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
