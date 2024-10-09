@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Лабораторна робота №3</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="OLEH" style="display: block; margin: 0 auto;">
+    </header>
+    <main>
+        <section>
+            <h2>Лабораторна робота №3</h2>
+            <p>Початок Створення Сайту.</p>
+        </section>
+        <article>
+            <p style="text-align: center;">Вивчення мов HTML та CSS</p>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li>Головна</li>
+            <li>Про нас</li>
+            <li>Контакти</li>
+            <li>Послуги</li>
+        </ul>
+    </footer>
+</body><link rel="stylesheet" type="text/css" href="styles.css">
+
+</html>
