@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сучасна Музика</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Сучасна Музика</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Контакт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Ласкаво просимо до Сучасної Музики</h2>
+            <p>Ваше натхнення, наша пристрасть.</p>
+            <button class="get-started-btn">Дізнатись більше</button>
+        </section>
+
+        <section class="info">
+            <div class="genres">
+                <h3>Жанри</h3>
+                <p>Сучасна музика охоплює безліч жанрів, таких як поп, рок, хіп-хоп, електронна та багато інших. Кожен жанр має своїх унікальних виконавців та стиль.</p>
+            </div>
+            <div class="artists">
+                <h3>Виконавці</h3>
+                <p>Зараз на сцені можна знайти безліч талановитих артистів, таких як Тейлор Свіфт, Дрейк, Біллі Айліш та багато інших, які формують обличчя сучасної музики.</p>
+            </div>
+            <div class="albums">
+                <h3>Альбоми</h3>
+                <ul>
+                    <li>Album 1: "Midnights" - Тейлор Свіфт</li>
+                    <li>Album 2: "Certified Lover Boy" - Дрейк</li>
+                    <li>Album 3: "Happier Than Ever" - Біллі Айліш</li>
+                    <li>Album 4: "Donda" - Канье Уест</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Сучасна Музика. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
