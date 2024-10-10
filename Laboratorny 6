@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #4CAF50; /* Зелений колір заголовка */
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4CAF50; /* Зелена кнопка */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 5px 0;
+            width: 90%;
+        }
+
+        button:hover {
+            background-color: #45a049; /* Темніший зелений при наведенні */
+        }
+
+        #result, #error-message {
+            margin-top: 20px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #error-message {
+            color: red; /* Червоний колір повідомлення про помилку */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор</h1>
+        <input type="text" id="num1" placeholder="Перше число">
+        <input type="text" id="num2" placeholder="Друге число">
+        <button id="calculate-btn">Обчислити</button>
+        <button id="toggle-result-btn">Показати результат</button>
+        
+        <div id="result" class="hidden">
+            <p>Результат: <span id="result-value"></span></p>
+        </div>
+        <p id="error-message" class="hidden">Будь ласка, введіть коректні числа!</p>
+    </div>
+
+    <script>
+        // Отримуємо необхідні елементи з DOM
+        const num1Input = document.getElementById('num1');
+        const num2Input = document.getElementById('num2');
+        const calculateBtn = document.getElementById('calculate-btn');
+        const toggleResultBtn = document.getElementById('toggle-result-btn');
+        const resultDiv = document.getElementById('result');
+        const resultValueSpan = document.getElementById('result-value');
+        const errorMessage = document.getElementById('error-message');
+
+        // Функція для перевірки, чи є введене значення числом
+        function isValidNumber(value) {
+            return !isNaN(value) && value.trim() !== '';
+        }
+
+        // Функція для додавання двох чисел
+        function calculate() {
+            const num1 = num1Input.value;
+            const num2 = num2Input.value;
+
+            // Перевіряємо, чи введені значення є коректними числами
+            if (isValidNumber(num1) && isValidNumber(num2)) {
+                const sum = parseFloat(num1) + parseFloat(num2);
+                resultValueSpan.textContent = sum;  // Виводимо результат
+                resultDiv.classList.remove('hidden');  // Показуємо результат
+                errorMessage.classList.add('hidden');   // Приховуємо повідомлення про помилку
+            } else {
+                // Показуємо повідомлення про помилку
+                errorMessage.classList.remove('hidden');
+                resultDiv.classList.add('hidden');
+            }
+        }
+
+        // Функція для приховування або показу результату
+        function toggleResult() {
+            if (resultDiv.classList.contains('hidden')) {
+                resultDiv.classList.remove('hidden');
+                toggleResultBtn.textContent = 'Приховати результат';
+            } else {
+                resultDiv.classList.add('hidden');
+                toggleResultBtn.textContent = 'Показати результат';
+            }
+        }
+
+        // Додаємо обробники подій
+        calculateBtn.addEventListener('click', calculate);
+        toggleResultBtn.addEventListener('click', toggleResult);
+    </script>
+</body>
+</html>
