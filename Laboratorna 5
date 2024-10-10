@@ -10,8 +10,6 @@ function replaceVowels(str) {
     .join('');
 }
 
-console.log(replaceVowels("hello world")); // Виведе: "h*ll* w*rld"
-console.log(replaceVowels("Javascript"));  // Виведе: "J*v*scr*pt"
 
 module.exports = replaceVowels;
 
@@ -25,9 +23,6 @@ function reverseWithoutNumbers(str) {
   // Повертаємо масив у зворотному порядку та об'єднуємо його в рядок
   return lettersOnly.reverse().join('');
 }
-
-console.log(reverseWithoutNumbers("hello123world456")); // Виведе: "dlrowolleh"
-console.log(reverseWithoutNumbers("abc123xyz"));       // Виведе: "zyxabc"
 
 module.exports = reverseWithoutNumbers;
 
@@ -46,9 +41,6 @@ function sumArray(numbers) {
   return sum; // Повертаємо загальну суму
 }
 
-// Приклади використання:
-console.log(sumArray([1, 2, 3, 4, 5])); // Виведе: 15
-console.log(sumArray([10, 20, 30]));    // Виведе: 60
 
 module.exports = sumArray;
 
@@ -73,9 +65,6 @@ function findMax(numbers) {
   return max; // Повертаємо найбільше число
 }
 
-// Приклади використання:
-console.log(findMax([3, 5, 7, 2, 8])); // Виведе: 8
-console.log(findMax([10, 20, 5, 30])); // Виведе: 30
 
 module.exports = findMax;
 
@@ -96,9 +85,5 @@ function countOccurrences(str, char) {
 
   return count; // Повертаємо загальну кількість входжень
 }
-
-// Приклади використання:
-console.log(countOccurrences("hello world", 'o')); // Виведе: 2
-console.log(countOccurrences("banana", 'a'));       // Виведе: 3
 
 module.exports = countOccurrences;
